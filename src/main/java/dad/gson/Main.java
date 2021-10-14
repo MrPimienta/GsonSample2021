@@ -25,7 +25,7 @@ public class Main {
 				System.out.println("Introduzca su edad: ");
 				edad = in.nextLine();
 				
-				if(edad.matches("^[0-9]+$")==true) {
+				if(edad.matches("^[0-9]+$")==true) { //Verificamos que los datos introducidos son del tipo indicado
 					in.close();
 					Persona p = new Persona(nombre, apellidos, Integer.parseInt(edad)); //Parseamos a entero la edad
 					toJson(p);
